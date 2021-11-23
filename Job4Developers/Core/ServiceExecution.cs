@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Job4Developers.DomainObject;
+using Job4Developers.Enums;
+using Job4Developers.Factories;
+using System;
 
-namespace Job4Developers
+namespace Job4Developers.Core
 {
     public class ServiceExecution
     {

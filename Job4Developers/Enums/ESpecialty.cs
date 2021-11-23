@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Job4Developers
+namespace Job4Developers.Enums
 {
     public enum ESpecialty
     {

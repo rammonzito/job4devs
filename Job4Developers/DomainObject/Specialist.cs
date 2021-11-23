@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Job4Developers.Enums;
+using System;
 
-namespace Job4Developers
+namespace Job4Developers.DomainObject
 {
     public abstract class Specialist
     {

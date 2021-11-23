@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Job4Developers.Core;
+using Job4Developers.DomainObject;
+using Job4Developers.Enums;
+using System;
 
 namespace Job4Developers
 {

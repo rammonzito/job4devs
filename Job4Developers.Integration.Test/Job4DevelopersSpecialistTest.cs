@@ -1,3 +1,5 @@
+using Job4Developers.DomainObject;
+using Job4Developers.Enums;
 using System;
 using Xunit;
 
