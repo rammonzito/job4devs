@@ -16,9 +16,9 @@ namespace Job4Developers.Core
             _specialty = factory.CreateSpecialty();
         }
 
-        public void Perform()
+        public bool Perform()
         {
-            _specialist.Code(_specialty);
+            return _specialist.Code(_specialty);
         }
     }
     public static class ServiceExecutionCreator
@@ -29,8 +29,8 @@ namespace Job4Developers.Core
             {
                 case ESpecialty.Web:
                     return new ServiceExecution(new WebDevelopmentFactory(), specialist);
-                //case ESpecialty.Desktop:
-                //    break;
+                case ESpecialty.Desktop:
+                    return new ServiceExecution(new DesktopDeveloperFactory(), specialist);
                 //case ESpecialty.Mobile:
                 //    break;
                 default:

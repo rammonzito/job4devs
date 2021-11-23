@@ -1,3 +1,4 @@
+using Job4Developers.Core;
 using Job4Developers.DomainObject;
 using Job4Developers.Enums;
 using System;
@@ -10,7 +11,14 @@ namespace Job4Developers.Integration.Test
         [Fact]
         public void SpecialistNonexistentShouldShowException()
         {
-            Assert.Throws<ApplicationException>(() => SpecialistCreator.Create("Ramon", ESpecialty.Desktop)); 
+            Assert.Throws<ApplicationException>(() => SpecialistCreator.Create("Ramon", ESpecialty.Mobile)); 
+        }
+
+        [Fact]
+        public void SpecialistExistentShouldWorks()
+        {
+            var specialist = SpecialistCreator.Create("Ramon", ESpecialty.Desktop);
+            Assert.NotNull(specialist);
         }
     }
 }

@@ -14,7 +14,7 @@ namespace Job4Developers.DomainObject
         public string Name { get; set; }
         public ESpecialty Specialty { get; set; }
 
-        public abstract void Code(Specialty specialty);
+        public abstract bool Code(Specialty specialty);
     }
     public static class SpecialistCreator
     {
@@ -24,7 +24,8 @@ namespace Job4Developers.DomainObject
             {
                 case ESpecialty.Web:
                     return new WebDeveloper(name, specialty);
-                //case ESpecialty.Desktop:
+                case ESpecialty.Desktop:
+                    return new DesktopDeveloper(name, specialty);
                 //    break;
                 //case ESpecialty.Mobile:
                 //    break;

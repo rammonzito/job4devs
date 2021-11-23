@@ -2,6 +2,7 @@
 using Job4Developers.DomainObject;
 using Job4Developers.Enums;
 using System;
+using System.Collections.Generic;
 
 namespace Job4Developers
 {
@@ -9,9 +10,15 @@ namespace Job4Developers
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            var specialist = SpecialistCreator.Create("Ramon", ESpecialty.Web);
-            ServiceExecutionCreator.Create(specialist).Perform();
+            Console.WriteLine("Hello Devs!");
+
+            var specialists = new List<Specialist>
+            {
+                SpecialistCreator.Create("Ramon", ESpecialty.Web),
+                SpecialistCreator.Create("João", ESpecialty.Desktop)
+            };
+
+            specialists.ForEach(s => ServiceExecutionCreator.Create(s).Perform());
         }
     }
 }

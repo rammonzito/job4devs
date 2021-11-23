@@ -21,6 +21,8 @@ namespace Job4Developers.DomainObject
             {
                 case (ESpecialty.Web):
                     return new WebDevelopment(specialty);
+                case (ESpecialty.Desktop):
+                    return new DesktopDevelopment(specialty);
                 default:
                     throw new ApplicationException("Specialty Not Found");
             }

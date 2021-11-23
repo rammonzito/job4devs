@@ -9,9 +9,10 @@ namespace Job4Developers.DomainObject
         {
         }
 
-        public override void Code(Specialty specialty)
+        public override bool Code(Specialty specialty)
         {
             Console.WriteLine($"Web Developer Coding {specialty.GetType().Name}");
+            return true;
         }
     }
 }
