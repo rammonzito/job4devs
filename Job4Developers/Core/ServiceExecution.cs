@@ -30,9 +30,9 @@ namespace Job4Developers.Core
                 case ESpecialty.Web:
                     return new ServiceExecution(new WebDevelopmentFactory(), specialist);
                 case ESpecialty.Desktop:
-                    return new ServiceExecution(new DesktopDeveloperFactory(), specialist);
-                //case ESpecialty.Mobile:
-                //    break;
+                    return new ServiceExecution(new DesktopDevelopmentFactory(), specialist);
+                case ESpecialty.Mobile:
+                    return new ServiceExecution(new MobileDevelopmentFactory(), specialist);
                 default:
                     throw new ApplicationException("Service Not Found");
             }

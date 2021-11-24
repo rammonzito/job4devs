@@ -11,13 +11,13 @@ namespace Job4Developers.Integration.Test
         [Fact]
         public void SpecialistNonexistentShouldShowException()
         {
-            Assert.Throws<ApplicationException>(() => SpecialistCreator.Create("Ramon", ESpecialty.Mobile)); 
+            Assert.Throws<ApplicationException>(() => SpecialistCreator.Create("Ramon", ESpecialty.IoT)); 
         }
 
         [Fact]
         public void SpecialistExistentShouldWorks()
         {
-            var specialist = SpecialistCreator.Create("Ramon", ESpecialty.Desktop);
+            var specialist = SpecialistCreator.Create("Ramon", ESpecialty.Mobile);
             Assert.NotNull(specialist);
         }
     }

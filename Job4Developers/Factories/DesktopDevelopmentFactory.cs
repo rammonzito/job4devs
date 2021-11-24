@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Job4Developers.Factories
 {
-    public class DesktopDeveloperFactory : ServiceFactory
+    public class DesktopDevelopmentFactory : ServiceFactory
     {
         public override Specialist CreateSpecialist(string name, ESpecialty specialty)
         {

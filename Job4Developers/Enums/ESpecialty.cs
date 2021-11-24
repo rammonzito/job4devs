@@ -10,6 +10,7 @@ namespace Job4Developers.Enums
     {
         Web,
         Desktop,
-        Mobile
+        Mobile,
+        IoT
     }
 }

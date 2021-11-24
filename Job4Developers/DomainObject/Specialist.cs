@@ -26,9 +26,8 @@ namespace Job4Developers.DomainObject
                     return new WebDeveloper(name, specialty);
                 case ESpecialty.Desktop:
                     return new DesktopDeveloper(name, specialty);
-                //    break;
-                //case ESpecialty.Mobile:
-                //    break;
+                case ESpecialty.Mobile:
+                    return new MobileDeveloper(name, specialty);
                 default:
                     throw new ApplicationException("Specialist Not Found");
             }
