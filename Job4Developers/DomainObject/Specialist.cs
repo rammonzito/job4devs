@@ -21,10 +21,8 @@ namespace Job4Developers.DomainObject
     {
         public static Specialist Create(string name, ESpecialty specialty)
         {
-            SpecialistStrategy strategy = new WebDeveloperStrategy();
-            strategy.SetNext(new DesktopDeveloperStrategy());
-
-            return SpecialistStrategy.ProcessRequest(name, specialty, strategy);
+            SpecialistStrategy webStrategy = new WebDeveloperStrategy();
+            return SpecialistStrategy.ProcessRequest(name, specialty, webStrategy);
         }
     }
 }

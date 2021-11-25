@@ -14,9 +14,14 @@ namespace Job4Developers.DomainObject.Strategy
             if (IsValid(specialty))
                 return new DesktopDeveloper(name, specialty);
             else
-                return Next?.CreateSpecialistUsingSpecialty(name, specialty);
-
-            throw new ApplicationException("Specialist Not Found");
+                try
+                {
+                    return Next.CreateSpecialistUsingSpecialty(name, specialty);
+                }
+                catch (Exception)
+                {
+                    throw new ApplicationException("Specialist Not Found");
+                }
         }
 
         public override bool IsValid(ESpecialty specialityStrategy)

@@ -17,7 +17,7 @@ namespace Job4Developers.Integration.Test
         [Fact]
         public void SpecialistExistentShouldWorks()
         {
-            var specialist = SpecialistCreator.Create("Ramon", ESpecialty.Mobile);
+            var specialist = SpecialistCreator.Create("Ramon", ESpecialty.Web);
             Assert.NotNull(specialist);
         }
     }

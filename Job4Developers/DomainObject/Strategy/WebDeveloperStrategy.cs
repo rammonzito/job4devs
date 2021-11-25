@@ -9,6 +9,10 @@ namespace Job4Developers.DomainObject.Strategy
 {
     public class WebDeveloperStrategy : SpecialistStrategy
     {
+        public WebDeveloperStrategy()
+        {
+            SetNext(new DesktopDeveloperStrategy());
+        }
         private new SpecialistStrategy Next { get; set; }
 
         public override Specialist CreateSpecialistUsingSpecialty(string name, ESpecialty specialty)
