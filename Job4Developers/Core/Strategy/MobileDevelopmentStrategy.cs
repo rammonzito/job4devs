@@ -14,13 +14,5 @@ namespace Job4Developers.Core.Strategy
         {
             return new ServiceExecution(new MobileDevelopmentFactory(), specialist);
         }
-
-        //public bool IsValid(Specialist specialty)
-        //{
-        //    return specialty.Specialty == Enums.ESpecialty.Mobile;
-        //}        //public bool IsValid(Specialist specialty)
-        //{
-        //    return specialty.Specialty == Enums.ESpecialty.Mobile;
-        //}
     }
 }

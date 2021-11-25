@@ -14,10 +14,5 @@ namespace Job4Developers.Core.Strategy
         {
             return new ServiceExecution(new DesktopDevelopmentFactory(), specialist);
         }
-
-        //public bool IsValid(Specialist specialty)
-        //{
-        //    return specialty.Specialty == Enums.ESpecialty.Desktop;
-        //}
     }
 }

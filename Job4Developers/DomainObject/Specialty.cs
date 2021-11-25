@@ -1,4 +1,5 @@
 ﻿using Job4Developers.Enums;
+using Job4Developers.Exceptions;
 using System;
 
 namespace Job4Developers.DomainObject
@@ -26,7 +27,7 @@ namespace Job4Developers.DomainObject
                 case (ESpecialty.Mobile):
                     return new MobileDevelopment(specialty);
                 default:
-                    throw new ApplicationException("Specialty Not Found");
+                    throw new SpecialtyNotFoundException();
             }
         }
     }
