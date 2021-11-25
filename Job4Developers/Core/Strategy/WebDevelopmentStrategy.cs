@@ -9,10 +9,5 @@ namespace Job4Developers.Core.Strategy
         {
             return new ServiceExecution(new WebDevelopmentFactory(), specialist);
         }
-
-        //public bool IsValid(Specialist specialty)
-        //{
-        //    return specialty.Specialty == Enums.ESpecialty.Web;
-        //}
     }
 }

@@ -16,6 +16,7 @@ namespace Job4Developers
 
             Specialist Ramon = SpecialistCreator.Create("Ramon", ESpecialty.Web);
             Specialist Joao = SpecialistCreator.Create("João", ESpecialty.Desktop);
+            Specialist Thaina = SpecialistCreator.Create("Naná", ESpecialty.IoT);
 
             ServiceExecutionCreator.Create(Ramon, new WebDevelopmentStrategy()).Perform();
             ServiceExecutionCreator.Create(Joao, new DesktopDevelopmentStrategy()).Perform();

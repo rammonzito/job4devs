@@ -27,18 +27,6 @@ namespace Job4Developers.Core
         public static ServiceExecution Create(Specialist specialist, ISpecialtyStrategy strategy)
         {
             return strategy.CreateServiceExecution(specialist);
-
-            //switch (specialist.Specialty)
-            //{
-            //    case ESpecialty.Web:
-            //        return new ServiceExecution(new WebDevelopmentFactory(), specialist);
-            //    case ESpecialty.Desktop:
-            //        return new ServiceExecution(new DesktopDevelopmentFactory(), specialist);
-            //    case ESpecialty.Mobile:
-            //        return new ServiceExecution(new MobileDevelopmentFactory(), specialist);
-            //    default:
-            //        throw new ApplicationException("Service Not Found");
-            //}
         }
     }
 }

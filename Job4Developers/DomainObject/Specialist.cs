@@ -1,4 +1,5 @@
-﻿using Job4Developers.Enums;
+﻿using Job4Developers.DomainObject.Strategy;
+using Job4Developers.Enums;
 using System;
 
 namespace Job4Developers.DomainObject
@@ -20,17 +21,10 @@ namespace Job4Developers.DomainObject
     {
         public static Specialist Create(string name, ESpecialty specialty)
         {
-            switch (specialty)
-            {
-                case ESpecialty.Web:
-                    return new WebDeveloper(name, specialty);
-                case ESpecialty.Desktop:
-                    return new DesktopDeveloper(name, specialty);
-                case ESpecialty.Mobile:
-                    return new MobileDeveloper(name, specialty);
-                default:
-                    throw new ApplicationException("Specialist Not Found");
-            }
+            SpecialistStrategy strategy = new WebDeveloperStrategy();
+            strategy.SetNext(new DesktopDeveloperStrategy());
+
+            return SpecialistStrategy.ProcessRequest(name, specialty, strategy);
         }
     }
 }

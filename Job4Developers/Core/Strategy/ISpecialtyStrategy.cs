@@ -10,7 +10,6 @@ namespace Job4Developers.Core.Strategy
 {
     public interface ISpecialtyStrategy
     {
-        //bool IsValid(Specialist specialty);
         ServiceExecution CreateServiceExecution(Specialist specialist);
     }
 }
