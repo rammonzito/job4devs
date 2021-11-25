@@ -1,4 +1,5 @@
 ﻿using Job4Developers.Core;
+using Job4Developers.Core.Strategy;
 using Job4Developers.DomainObject;
 using Job4Developers.Enums;
 using System;
@@ -12,13 +13,12 @@ namespace Job4Developers
         {
             Console.WriteLine("Hello Devs!");
 
-            var specialists = new List<Specialist>
-            {
-                SpecialistCreator.Create("Ramon", ESpecialty.Web),
-                SpecialistCreator.Create("João", ESpecialty.Desktop)
-            };
 
-            specialists.ForEach(s => ServiceExecutionCreator.Create(s).Perform());
+            Specialist Ramon = SpecialistCreator.Create("Ramon", ESpecialty.Web);
+            Specialist Joao = SpecialistCreator.Create("João", ESpecialty.Desktop);
+
+            ServiceExecutionCreator.Create(Ramon, new WebDevelopmentStrategy()).Perform();
+            ServiceExecutionCreator.Create(Joao, new DesktopDevelopmentStrategy()).Perform();
         }
     }
 }
