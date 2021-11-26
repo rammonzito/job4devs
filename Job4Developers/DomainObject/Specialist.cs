@@ -1,6 +1,5 @@
 ﻿using Job4Developers.DomainObject.Strategy;
 using Job4Developers.Enums;
-using System;
 
 namespace Job4Developers.DomainObject
 {

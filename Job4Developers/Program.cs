@@ -3,7 +3,6 @@ using Job4Developers.Core.Strategy;
 using Job4Developers.DomainObject;
 using Job4Developers.Enums;
 using System;
-using System.Collections.Generic;
 
 namespace Job4Developers
 {
