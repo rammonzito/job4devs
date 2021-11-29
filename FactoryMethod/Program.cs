@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FactoryMethod.MeuFactoryMethod;
+using System;
 
 namespace FactoryMethod
 {
@@ -7,7 +8,10 @@ namespace FactoryMethod
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            ExecucaoFactoryMethod.Executar();
+            //ExecucaoFactoryMethod.Executar();
+
+            Document html = new HtmlDocument();
+            html.MontarLayout();
         }
     }
 }
