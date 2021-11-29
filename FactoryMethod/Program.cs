@@ -10,8 +10,8 @@ namespace FactoryMethod
             Console.WriteLine("Hello World!");
             //ExecucaoFactoryMethod.Executar();
 
-            Document html = new HtmlDocument();
-            html.MontarLayout();
+            Layout html = new HtmlDocument().MontarLayout();
+            
         }
     }
 }

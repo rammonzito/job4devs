@@ -8,9 +8,10 @@ namespace FactoryMethod.MeuFactoryMethod
 {
     public class PdfDocument : Document
     {
-        public override void MontarLayout()
+        public override LayoutPdf MontarLayout()
         {
             Console.WriteLine("Montando aqui o meu Layout do jeito que eu quero no PDF");
+            return new LayoutPdf();
         }
     }
 }

@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace FactoryMethod.MeuFactoryMethod
 {
-    public abstract class Document
+    public class LayoutHtml : Layout
     {
-        public abstract Layout MontarLayout();
     }
 }

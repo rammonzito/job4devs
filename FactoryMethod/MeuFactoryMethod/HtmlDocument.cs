@@ -8,9 +8,10 @@ namespace FactoryMethod.MeuFactoryMethod
 {
     public class HtmlDocument : Document
     {
-        public override void MontarLayout()
+        public override LayoutHtml MontarLayout()
         {
-            Console.WriteLine("Montando no HTMl");
+            Console.WriteLine("Montando aqui o meu Layout do jeito que eu quero no Html");
+            return new LayoutHtml();
         }
     }
 }
