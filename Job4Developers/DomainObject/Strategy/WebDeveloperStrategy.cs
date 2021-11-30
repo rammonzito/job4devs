@@ -9,7 +9,7 @@ namespace Job4Developers.DomainObject.Strategy
     {
         private readonly ILogger<WebDeveloperStrategy> _logger;
 
-        public WebDeveloperStrategy(ILogger<WebDeveloperStrategy> logger)
+        public WebDeveloperStrategy(/*ILogger<WebDeveloperStrategy> logger*/)
         {
             // _logger = logger;
             SetNext(new DesktopDeveloperStrategy());
