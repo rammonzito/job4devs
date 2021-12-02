@@ -1,8 +1,8 @@
 ﻿namespace Pizzaria
 {
-    public enum ETipoPizza
+    public enum ETipo
     {
         Calabresa,
-        Muzzarela
+        Mussarela
     }
 }

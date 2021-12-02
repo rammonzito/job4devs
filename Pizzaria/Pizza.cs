@@ -8,23 +8,11 @@ namespace Pizzaria
 {
     public abstract class Pizza
     {
-        public string Sabor { get; set; }
-        public abstract void Cozinhar();
-    }
+        public List<string> Ingredientes { get; set; }
 
-    public static class PizzaCreator
-    {
-        public static Pizza Create(ETipoPizza tipo)
+        public Pizza(List<string> ingredientes)
         {
-            switch (tipo)
-            {
-                case ETipoPizza.Calabresa:
-                    return new PizzaCalabresa();
-                case ETipoPizza.Muzzarela:
-                    return new PizzaMuzzarela();
-                default:
-                    throw new ApplicationException();
-            }
+            Ingredientes = ingredientes;
         }
     }
 }

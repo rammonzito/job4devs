@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace Pizzaria
 {
-    public class PizzaMuzzarela : Pizza
+    public class PizzaCalabresaRJ : Pizza
     {
-        public override void Cozinhar()
+        public PizzaCalabresaRJ(List<string> ingredientes) : base(ingredientes)
         {
-            throw new NotImplementedException();
         }
     }
 }

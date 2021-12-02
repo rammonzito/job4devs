@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace Pizzaria
 {
-    public abstract class PizzaFactory
+    public class PizzaCalabresaSP : Pizza
     {
-        public abstract Pizza CreatePizza();
+        public PizzaCalabresaSP(List<string> ingredientes) : base(ingredientes)
+        {
+        }
     }
 }
