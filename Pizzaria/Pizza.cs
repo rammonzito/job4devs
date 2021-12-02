@@ -14,5 +14,7 @@ namespace Pizzaria
         {
             Ingredientes = ingredientes;
         }
+
+        public abstract void Preparar();
     }
 }

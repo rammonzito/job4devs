@@ -9,13 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Job4Developers.Integration.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbstractFactory", "AbstractFactory\AbstractFactory.csproj", "{ACCC3039-5918-4A3E-8387-096034E2F45C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FactoryMethod", "FactoryMethod\FactoryMethod.csproj", "{B33119E0-7179-4EC7-A8DB-EC37FFC12E93}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryMethod2", "FactoryMethod2\FactoryMethod2.csproj", "{4163D103-17FD-4B7E-BE46-501471A25F31}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryMethodDirty", "FactoryMethodDirty\FactoryMethodDirty.csproj", "{EF8BC70E-D0D4-4A46-983F-BBC48DEB39EE}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pizzaria", "Pizzaria\Pizzaria.csproj", "{91E763B3-80F0-4F95-BBDA-F3F53A438632}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pizzaria", "Pizzaria\Pizzaria.csproj", "{91E763B3-80F0-4F95-BBDA-F3F53A438632}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,18 +29,6 @@ Global
 		{ACCC3039-5918-4A3E-8387-096034E2F45C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ACCC3039-5918-4A3E-8387-096034E2F45C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ACCC3039-5918-4A3E-8387-096034E2F45C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B33119E0-7179-4EC7-A8DB-EC37FFC12E93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B33119E0-7179-4EC7-A8DB-EC37FFC12E93}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B33119E0-7179-4EC7-A8DB-EC37FFC12E93}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B33119E0-7179-4EC7-A8DB-EC37FFC12E93}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4163D103-17FD-4B7E-BE46-501471A25F31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4163D103-17FD-4B7E-BE46-501471A25F31}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4163D103-17FD-4B7E-BE46-501471A25F31}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4163D103-17FD-4B7E-BE46-501471A25F31}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EF8BC70E-D0D4-4A46-983F-BBC48DEB39EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EF8BC70E-D0D4-4A46-983F-BBC48DEB39EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EF8BC70E-D0D4-4A46-983F-BBC48DEB39EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EF8BC70E-D0D4-4A46-983F-BBC48DEB39EE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{91E763B3-80F0-4F95-BBDA-F3F53A438632}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{91E763B3-80F0-4F95-BBDA-F3F53A438632}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91E763B3-80F0-4F95-BBDA-F3F53A438632}.Release|Any CPU.ActiveCfg = Release|Any CPU

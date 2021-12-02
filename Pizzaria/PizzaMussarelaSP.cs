@@ -11,5 +11,10 @@ namespace Pizzaria
         public PizzaMussarelaSP(List<string> ingredientes) : base(ingredientes)
         {
         }
+
+        public override void Preparar()
+        {
+            Console.WriteLine("Ignora tudo e coloca cebola");
+        }
     }
 }

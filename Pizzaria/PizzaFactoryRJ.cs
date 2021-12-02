@@ -8,7 +8,7 @@ namespace Pizzaria
 {
     public class PizzaFactoryRJ : PizzaFactoryMethod
     {
-        public override Pizza Preparar(ETipo tipo)
+        public override Pizza Escolher(ETipo tipo)
         {
             switch (tipo)
             {

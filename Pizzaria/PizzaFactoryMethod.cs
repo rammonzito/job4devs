@@ -8,6 +8,6 @@ namespace Pizzaria
 {
     public abstract class PizzaFactoryMethod
     {
-        public abstract Pizza Preparar(ETipo tipo);
+        public abstract Pizza Escolher(ETipo tipo);
     }
 }
