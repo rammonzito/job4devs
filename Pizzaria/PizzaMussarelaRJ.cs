@@ -8,13 +8,13 @@ namespace Pizzaria
 {
     public class PizzaMussarelaRJ : Pizza
     {
-        public PizzaMussarelaRJ(List<string> ingredientes) : base(ingredientes)
+        public PizzaMussarelaRJ(List<string> ingredients) : base(ingredients)
         {
         }
 
-        public override void Preparar()
+        public override void Prepare()
         {
-            Console.WriteLine($"{Ingredientes.First()}");
+            Console.WriteLine($"{Ingredients.First()}");
         }
     }
 }

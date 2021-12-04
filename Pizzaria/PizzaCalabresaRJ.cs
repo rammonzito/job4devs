@@ -8,13 +8,13 @@ namespace Pizzaria
 {
     public class PizzaCalabresaRJ : Pizza
     {
-        public PizzaCalabresaRJ(List<string> ingredientes) : base(ingredientes)
+        public PizzaCalabresaRJ(List<string> ingredients) : base(ingredients)
         {
         }
 
-        public override void Preparar()
+        public override void Prepare()
         {
-            Ingredientes.ForEach(i => Console.WriteLine($"Adicionando {i}"));
+            Ingredients.ForEach(i => Console.WriteLine($"Adicionando {i}"));
         }
     }
 }

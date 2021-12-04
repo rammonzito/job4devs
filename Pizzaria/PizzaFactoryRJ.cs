@@ -8,13 +8,13 @@ namespace Pizzaria
 {
     public class PizzaFactoryRJ : PizzaFactoryMethod
     {
-        public override Pizza Escolher(ETipo tipo)
+        public override Pizza Choose(EPizzaType pizzaType)
         {
-            switch (tipo)
+            switch (pizzaType)
             {
-                case ETipo.Calabresa:
+                case EPizzaType.Calabresa:
                     return new PizzaCalabresaRJ(new List<string> { "calabresa", "cebola" });
-                case ETipo.Mussarela:
+                case EPizzaType.Mussarela:
                     return new PizzaMussarelaRJ(new List<string> { "queijo minas", "salsinha" });
                 default:
                     throw new ApplicationException();

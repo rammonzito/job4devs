@@ -8,14 +8,14 @@ namespace Pizzaria
 {
     public class PizzaCalabresaSP : Pizza
     {
-        public PizzaCalabresaSP(List<string> ingredientes) : base(ingredientes)
+        public PizzaCalabresaSP(List<string> ingredients) : base(ingredients)
         {
         }
 
-        public override void Preparar()
+        public override void Prepare()
         {
             Console.WriteLine($"Misturando tudo");
-            Ingredientes.ForEach(i => Console.WriteLine(i));
+            Ingredients.ForEach(i => Console.WriteLine(i));
         }
     }
 }

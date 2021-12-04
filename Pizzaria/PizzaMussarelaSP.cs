@@ -8,11 +8,11 @@ namespace Pizzaria
 {
     public class PizzaMussarelaSP : Pizza
     {
-        public PizzaMussarelaSP(List<string> ingredientes) : base(ingredientes)
+        public PizzaMussarelaSP(List<string> ingredients) : base(ingredients)
         {
         }
 
-        public override void Preparar()
+        public override void Prepare()
         {
             Console.WriteLine("Ignora tudo e coloca cebola");
         }

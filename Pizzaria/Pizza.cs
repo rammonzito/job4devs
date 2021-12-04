@@ -8,13 +8,13 @@ namespace Pizzaria
 {
     public abstract class Pizza
     {
-        public List<string> Ingredientes { get; set; }
+        public List<string> Ingredients { get; set; }
 
-        public Pizza(List<string> ingredientes)
+        public Pizza(List<string> ingredients)
         {
-            Ingredientes = ingredientes;
+            Ingredients = ingredients;
         }
 
-        public abstract void Preparar();
+        public abstract void Prepare();
     }
 }

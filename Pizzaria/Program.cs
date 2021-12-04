@@ -7,8 +7,8 @@ namespace Pizzaria
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            var pizza = PizzaSimpleFactory.Criar(ELocal.RJ).Escolher(ETipo.Mussarela);
-            pizza.Preparar();
+            var pizza = PizzaSimpleFactory.Create(ELocal.RJ).Choose(EPizzaType.Mussarela);
+            pizza.Prepare();
         }
     }
 }

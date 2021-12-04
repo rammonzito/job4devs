@@ -8,7 +8,7 @@ namespace Pizzaria
 {
     public class PizzaSimpleFactory
     {
-        public static PizzaFactoryMethod Criar(ELocal local)
+        public static PizzaFactoryMethod Create(ELocal local)
         {
             switch (local)
             {
